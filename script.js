@@ -8,7 +8,7 @@ button.addEventListener('click', () => {
   modal.show();
   modal.wrapper.addEventListener('click', (ev) => {
     if (ev.target === modal.wrapper) {
-      modal.dimiss();
+      modal.dismiss();
     }
   })
 });
@@ -35,7 +35,7 @@ class Modal {
     });
   }
 
-  dimiss() {
+  dismiss() {
     this.modal.style.transform = 'scale(.3)';
     this.wrapper.style.opacity = 0;
     
